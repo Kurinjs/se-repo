@@ -49,8 +49,8 @@ namespace TRPOtask2
         public static void SecondVariant(object send, ElapsedEventArgs a)
         {
             Console.Clear();
-            PerformanceCounter ob1 = new PerformanceCounter("Processor", "% Cp", "_Total");
-            PerformanceCounter ob2 = new PerformanceCounter("Memory", "% use dedicated memory");
+            PerformanceCounter ob1 = new PerformanceCounter("Processor", " Cp %", "_Total");
+            PerformanceCounter ob2 = new PerformanceCounter("Memory", " use dedicated memory%");
             Console.WriteLine("Processor downloaded on {0}% , Memory downloaded on {1}%  ", ob1.NextValue(), ob2.NextValue());
             Console.Write("[");
             for (int i = 0; i < 100; i++)
